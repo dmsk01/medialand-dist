@@ -2426,15 +2426,6 @@ body#medialand-proto::before {
     margin-right: calc(0rem + 6.25 * (100vw - 20rem) / 69.5);
   }
 }
-.pallet-color__content_small {
-  flex: 0 1 17.8571428571%;
-  max-width: 200px;
-}
-@media (max-width: 47.99875em) {
-  .pallet-color__content_small {
-    max-width: 32%;
-  }
-}
 @media (max-width: 47.99875em) {
   .pallet-color__content {
     margin-right: 0;
@@ -2449,6 +2440,15 @@ body#medialand-proto::before {
   width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+.pallet-color__image_cropped {
+  padding-left: 66%;
+}
+@media (max-width: 47.99875em) {
+  .pallet-color__image_cropped {
+    padding-left: 0;
+    padding-right: 66.6%;
+  }
 }
 @media (max-width: 47.99875em) {
   .pallet-color__image {
