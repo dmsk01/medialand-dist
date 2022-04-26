@@ -126,6 +126,9 @@ body#medialand-home::before {
 body#medialand-search-and-analitics::before {
   background-image: linear-gradient(180deg, rgba(126, 126, 153, 0.2) 0%, #2f2f39 96.37%), url("../img/medialand/search-and-analitics/hero/bg.jpg");
 }
+body#medialand-proto::before {
+  background-image: linear-gradient(180deg, rgba(126, 126, 153, 0.2) 0%, #2f2f39 96.37%), url("../img/medialand/proto/hero/bg.png");
+}
 .lock body {
   overflow: hidden;
   touch-action: none;
@@ -402,7 +405,7 @@ body#medialand-search-and-analitics::before {
   position: relative;
   display: inline-block;
   padding-left: 60px;
-  color: #D2D2D2;
+  color: #d2d2d2;
 }
 .breadcrumps__link::before {
   content: "";
@@ -571,6 +574,10 @@ body#medialand-search-and-analitics::before {
   margin-bottom: 120px;
 }
 
+.search-and-analitics {
+  margin-bottom: 64px;
+}
+
 @supports (margin-bottom: clamp( 7.1875rem , 5.6587230216rem  +  7.6438848921vw , 12.5rem )) {
   .medialand-search-and-analitics__project-request {
     margin-bottom: clamp( 7.1875rem , 5.6587230216rem  +  7.6438848921vw , 12.5rem );
@@ -592,9 +599,6 @@ body#medialand-search-and-analitics::before {
   }
 }
 
-.hero {
-  padding-bottom: 64px;
-}
 @supports (padding-top: clamp( 3.125rem , 1.6861510791rem  +  7.1942446043vw , 8.125rem )) {
   .hero {
     padding-top: clamp( 3.125rem , 1.6861510791rem  +  7.1942446043vw , 8.125rem );
@@ -1665,7 +1669,7 @@ body#medialand-search-and-analitics::before {
   margin-bottom: 16px;
 }
 .search-problem__tip {
-  color: #D2D2D2;
+  color: #d2d2d2;
 }
 .search-problem__disadvantages {
   margin-bottom: 12px;
@@ -1884,5 +1888,34 @@ body#medialand-search-and-analitics::before {
   .content-analysis-interview__image {
     max-width: none;
     width: 270%;
+  }
+}
+
+.proto-hero {
+  margin-bottom: 75px;
+}
+@media (max-width: 47.99875em) {
+  .proto-hero {
+    margin-bottom: 15px;
+  }
+}
+
+.makets-proto {
+  margin-bottom: 115px;
+}
+@media (max-width: 47.99875em) {
+  .makets-proto {
+    margin-bottom: 80px;
+  }
+}
+.makets-proto__container {
+  max-width: 1120px;
+}
+.makets-proto__info-block {
+  margin-bottom: 65px;
+}
+@media (max-width: 47.99875em) {
+  .makets-proto__info-block {
+    margin-bottom: 40px;
   }
 }
