@@ -2451,7 +2451,6 @@ body#medialand-proto::before {
 }
 .pallet-color__image_mobile {
   display: block;
-  max-width: 33%;
 }
 @media (min-width: 47.99875em) {
   .pallet-color__image_mobile {
