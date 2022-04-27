@@ -2442,6 +2442,7 @@ body#medialand-proto::before {
   object-fit: contain;
 }
 .pallet-color__image_cropped {
+  min-height: 16.6666666667%;
   padding-left: 66%;
 }
 @media (max-width: 47.99875em) {
