@@ -2047,6 +2047,46 @@ body#medialand-proto::before {
     margin-bottom: calc(5rem + 6.875 * (100vw - 20rem) / 69.5);
   }
 }
+@supports (margin-bottom: clamp( 5rem , 3.381294964rem  +  8.0935251799vw , 10.625rem )) {
+  .medialand-proto__images-set {
+    margin-bottom: clamp( 5rem , 3.381294964rem  +  8.0935251799vw , 10.625rem );
+  }
+}
+@supports not (margin-bottom: clamp( 5rem , 3.381294964rem  +  8.0935251799vw , 10.625rem )) {
+  .medialand-proto__images-set {
+    margin-bottom: calc(5rem + 5.625 * (100vw - 20rem) / 69.5);
+  }
+}
+@supports (margin-bottom: clamp( 5rem , 3.381294964rem  +  8.0935251799vw , 10.625rem )) {
+  .medialand-proto__icons-set {
+    margin-bottom: clamp( 5rem , 3.381294964rem  +  8.0935251799vw , 10.625rem );
+  }
+}
+@supports not (margin-bottom: clamp( 5rem , 3.381294964rem  +  8.0935251799vw , 10.625rem )) {
+  .medialand-proto__icons-set {
+    margin-bottom: calc(5rem + 5.625 * (100vw - 20rem) / 69.5);
+  }
+}
+@supports (margin-bottom: clamp( 5rem , 4.4604316547rem  +  2.6978417266vw , 6.875rem )) {
+  .medialand-proto__styleguide {
+    margin-bottom: clamp( 5rem , 4.4604316547rem  +  2.6978417266vw , 6.875rem );
+  }
+}
+@supports not (margin-bottom: clamp( 5rem , 4.4604316547rem  +  2.6978417266vw , 6.875rem )) {
+  .medialand-proto__styleguide {
+    margin-bottom: calc(5rem + 1.875 * (100vw - 20rem) / 69.5);
+  }
+}
+@supports (margin-bottom: clamp( 5rem , 3.381294964rem  +  8.0935251799vw , 10.625rem )) {
+  .medialand-proto__composition-item {
+    margin-bottom: clamp( 5rem , 3.381294964rem  +  8.0935251799vw , 10.625rem );
+  }
+}
+@supports not (margin-bottom: clamp( 5rem , 3.381294964rem  +  8.0935251799vw , 10.625rem )) {
+  .medialand-proto__composition-item {
+    margin-bottom: calc(5rem + 5.625 * (100vw - 20rem) / 69.5);
+  }
+}
 
 .interactiv-protocol__info-block {
   margin-bottom: 67px;
@@ -2474,4 +2514,140 @@ body#medialand-proto::before {
 }
 .pallet-color__subtitle {
   margin-bottom: 10px;
+}
+
+.proto-images-set__intro {
+  margin-bottom: 90px;
+}
+@media (max-width: 47.99875em) {
+  .proto-images-set__intro {
+    margin-bottom: 20px;
+  }
+}
+.proto-images-set__container {
+  max-width: 1120px;
+}
+.proto-images-set__info-block {
+  max-width: 840px;
+  width: 100%;
+}
+.proto-images-set__image {
+  max-width: 100%;
+}
+.proto-images-set__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.proto-images-set__image_desktop {
+  display: none;
+}
+@media (min-width: 47.99875em) {
+  .proto-images-set__image_desktop {
+    display: block;
+  }
+}
+.proto-images-set__image_mobile {
+  display: block;
+}
+@media (min-width: 47.99875em) {
+  .proto-images-set__image_mobile {
+    display: none;
+  }
+}
+
+.proto-icons-set__container {
+  max-width: 1120px;
+}
+.proto-icons-set__info-block {
+  max-width: 840px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+@media (max-width: 47.99875em) {
+  .proto-icons-set__info-block {
+    margin-bottom: 40px;
+  }
+}
+.proto-icons-set__content {
+  max-width: 1342px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.proto-icons-set__inner {
+  display: flex;
+  margin: 0 -27px;
+}
+@media (max-width: 61.99875em) {
+  .proto-icons-set__inner {
+    margin: 0 -10px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .proto-icons-set__inner {
+    flex-direction: column;
+  }
+}
+.proto-icons-set__item {
+  flex: 0 1 50%;
+  padding: 0 27px;
+  height: 100%;
+}
+@media (max-width: 61.99875em) {
+  .proto-icons-set__item {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .proto-icons-set__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.item-icon-set {
+  height: 100%;
+}
+.item-icon-set__image {
+  max-width: 100%;
+  margin-bottom: 54px;
+}
+.item-icon-set__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 47.99875em) {
+  .item-icon-set__image {
+    margin-bottom: 30px;
+  }
+}
+.item-icon-set__info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.item-icon-set__title {
+  margin-bottom: 10px;
+}
+.item-icon-set__text {
+  flex: 1 1 auto;
+}
+
+.proto-styleguide__intro {
+  margin-bottom: 40px;
+}
+.proto-styleguide__container {
+  max-width: 1120px;
+}
+.proto-styleguide__info-block {
+  max-width: 840px;
+  width: 100%;
+}
+.proto-styleguide__image {
+  max-width: 100%;
+}
+.proto-styleguide__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
