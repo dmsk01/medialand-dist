@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: OrenburgC;
   font-display: swap;
@@ -135,6 +134,9 @@ body#medialand-corporate::before {
 body#medialand-control::before {
   background-image: linear-gradient(180deg, rgba(126, 126, 153, 0.2) 0%, #2f2f39 96.37%), url("../img/medialand/control-panel/hero/bg.png");
 }
+body#medialand-admin::before {
+  background-image: linear-gradient(180deg, rgba(126, 126, 153, 0.2) 0%, #2f2f39 100%), url("../img/medialand/admin-panel/hero/bg.png");
+}
 .lock body {
   overflow: hidden;
   touch-action: none;
@@ -152,12 +154,6 @@ body#medialand-control::before {
   min-width: 0;
 }
 
-/*
-(i) Стили будут применяться ко 
-всем классам содержащим *__container
-Например header__container, main__container и т.д.
-Снипет (HTML): cnt
-*/
 [class*=__container] {
   max-width: 87.5rem;
   box-sizing: content-box;
@@ -602,19 +598,20 @@ div[class*=__container_mobile] {
 .more-about-project__row {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   overflow-x: scroll;
 }
-@media (max-width: 73.125em) {
+@media (max-width: 89.5em) {
   .more-about-project__row {
     flex-wrap: wrap;
     margin: 0 -5px;
+    padding: 0 16px;
   }
 }
 .more-about-project__item {
-  flex: 0 0 372px;
+  flex: 0 0 375px;
 }
-@media (max-width: 73.125em) {
+@media (max-width: 89.5em) {
   .more-about-project__item {
     flex: 0 1 50%;
     margin-bottom: 10px;
@@ -3076,16 +3073,63 @@ div[class*=__container_mobile] {
     margin-bottom: 80px;
   }
 }
+.accounts-control_reverse .accounts-control__body {
+  flex-direction: row-reverse;
+}
+@media (max-width: 47.99875em) {
+  .accounts-control_reverse .accounts-control__body {
+    margin-bottom: 0;
+    flex-direction: column-reverse;
+  }
+}
+.accounts-control_reverse .accounts-control__column:first-child {
+  flex: 0 1 760px;
+}
+@media (max-width: 47.99875em) {
+  .accounts-control_reverse .accounts-control__column:first-child {
+    flex: 1 1 100%;
+  }
+}
+.accounts-control_reverse .accounts-control__column:last-child {
+  flex: 0 0 335px;
+  margin-left: 0;
+}
+@supports (margin-right: clamp( 0rem , -1.618705036rem  +  8.0935251799vw , 5.625rem )) {
+  .accounts-control_reverse .accounts-control__column:last-child {
+    margin-right: clamp( 0rem , -1.618705036rem  +  8.0935251799vw , 5.625rem );
+  }
+}
+@supports not (margin-right: clamp( 0rem , -1.618705036rem  +  8.0935251799vw , 5.625rem )) {
+  .accounts-control_reverse .accounts-control__column:last-child {
+    margin-right: calc(0rem + 5.625 * (100vw - 20rem) / 69.5);
+  }
+}
+@media (max-width: 47.99875em) {
+  .accounts-control_reverse .accounts-control__column:last-child {
+    flex: 1 1 100%;
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+}
 .accounts-control__body {
   display: flex;
   align-items: center;
   margin-bottom: 160px;
 }
+@media (max-width: 89.5em) {
+  .accounts-control__body {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 61.99875em) {
+  .accounts-control__body {
+    margin-bottom: 80px;
+  }
+}
 @media (max-width: 47.99875em) {
   .accounts-control__body {
     flex-direction: column-reverse;
     align-items: flex-start;
-    margin-bottom: 80px;
   }
 }
 .accounts-control__column {
@@ -3135,8 +3179,10 @@ div[class*=__container_mobile] {
   }
 }
 
-.medialand-control-panel__grid {
-  margin-bottom: 180px;
+@media (max-width: 89.5em) {
+  .medialand-control-panel__grid {
+    margin-bottom: 180px;
+  }
 }
 @media (max-width: 61.99875em) {
   .medialand-control-panel__grid {
