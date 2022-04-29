@@ -3173,15 +3173,8 @@ div[class*=__container_mobile] {
 .accounts-control__column:first-child {
   align-self: center;
 }
-@supports (margin-left: clamp( 0rem , -1.618705036rem  +  8.0935251799vw , 5.625rem )) {
-  .accounts-control__column:last-child {
-    margin-left: clamp( 0rem , -1.618705036rem  +  8.0935251799vw , 5.625rem );
-  }
-}
-@supports not (margin-left: clamp( 0rem , -1.618705036rem  +  8.0935251799vw , 5.625rem )) {
-  .accounts-control__column:last-child {
-    margin-left: calc(0rem + 5.625 * (100vw - 20rem) / 69.5);
-  }
+.accounts-control__column:last-child {
+  margin-left: 90px;
 }
 @media (max-width: 47.99875em) {
   .accounts-control__column:last-child {
