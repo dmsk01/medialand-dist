@@ -555,6 +555,10 @@ div[class*=__container_mobile] {
   }
 }
 
+.player.hide-controls-mode {
+  pointer-events: none;
+}
+
 .header_desc {
   display: none;
 }
@@ -3121,31 +3125,21 @@ div[class*=__container_mobile] {
 }
 .accounts-control_reverse .accounts-control__column:first-child {
   flex: 0 1 760px;
+  margin-left: 90px;
 }
 @media (max-width: 47.99875em) {
   .accounts-control_reverse .accounts-control__column:first-child {
+    margin-left: 0;
     flex: 1 1 100%;
   }
 }
 .accounts-control_reverse .accounts-control__column:last-child {
   flex: 0 0 335px;
   margin-left: 0;
-  margin-left: 90px;
-}
-@supports (margin-right: clamp( 0rem , -1.618705036rem  +  8.0935251799vw , 5.625rem )) {
-  .accounts-control_reverse .accounts-control__column:last-child {
-    margin-right: clamp( 0rem , -1.618705036rem  +  8.0935251799vw , 5.625rem );
-  }
-}
-@supports not (margin-right: clamp( 0rem , -1.618705036rem  +  8.0935251799vw , 5.625rem )) {
-  .accounts-control_reverse .accounts-control__column:last-child {
-    margin-right: calc(0rem + 5.625 * (100vw - 20rem) / 69.5);
-  }
 }
 @media (max-width: 47.99875em) {
   .accounts-control_reverse .accounts-control__column:last-child {
     flex: 1 1 100%;
-    margin-left: 0;
     margin-bottom: 35px;
   }
 }
