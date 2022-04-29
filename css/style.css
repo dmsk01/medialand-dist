@@ -559,6 +559,15 @@ div[class*=__container_mobile] {
   pointer-events: none;
 }
 
+.vp-sidedock {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.player .vp-controls {
+  display: none !important;
+}
+
 .header_desc {
   display: none;
 }
@@ -2058,6 +2067,22 @@ div[class*=__container_mobile] {
   .makets-proto__video {
     margin-bottom: calc(5rem + 2.1875 * (100vw - 20rem) / 69.5);
   }
+}
+
+.video-proto__container {
+  position: relative;
+}
+.video-proto__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%, 0);
+  height: 2px;
+  width: calc(100% - 32px);
+  background: #333;
+  z-index: 1;
 }
 
 .description-proto__container {
